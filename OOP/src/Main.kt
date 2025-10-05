@@ -27,7 +27,15 @@ fun main(args: Array<String>) {
     val user = User("Aohn", "Doe", 23)
     val friend = User("john", "Smith", 50)
 
-    println("Name ${friend.name}")
+    // part of the secondary constructor code
+    println("Name = ${user.name}")
+//    println("lastName = ${user.lastName}")
+//    println("Age = ${user.age}")
+//    println("\n")
+//
+//    println("Name = ${friend.name}")
+//    println("lastName = ${friend.lastName}")
+//    println("Age = ${friend.age}")
 }
 
 class User(name: String, var lastName: String, var age: Int) {
@@ -45,4 +53,13 @@ class User(name: String, var lastName: String, var age: Int) {
     init {
 
     }
+
+    // secondary constructor
+//    constructor(name: String) : this(name, "LastName", 0) {
+//        println("Second")
+//    }
+//
+//    constructor(name: String, lastName: String) : this(name, lastName, 0) {
+//        println("Third")
+//    }
 }
