@@ -26,17 +26,28 @@ fun main(args: Array<String>) {
 
     val user = User("Aohn", "Doe", 23)
     val friend = User("john", "Smith", 50)
+    val user2 = User(age = 19, firstName = "Alice", lastName = "Doe")
 
     // part of the secondary constructor code
     println("Name = ${user.name}")
 //    println("lastName = ${user.lastName}")
 //    println("Age = ${user.age}")
 //    println("\n")
+
+//      println("Name = ${user2.firstName}")
+//    println("lastName = ${user2.lastName}")
+//    println("Age = ${user2.age}")
+//    println("\n")
 //
 //    println("Name = ${friend.name}")
 //    println("lastName = ${friend.lastName}")
 //    println("Age = ${friend.age}")
 }
+
+
+// class User(var firstName: String, var lastName: String = "lastName", var age: Int = 0) {
+
+// }
 
 class User(name: String, var lastName: String, var age: Int) {
     var name : String
